@@ -56,12 +56,12 @@ public class Pelicula {
     
     public void imprimirEstado(){
         System.out.println("Titulo: " + titulo);
-        System.out.println("Duración: " + duracionMinutos + "minutos");
+        System.out.println("Duración: " + duracionMinutos + " minutos");
         System.out.println("Está en el idioma original: " + idiomaOriginal);
     }
     
     public String estadoPelicula(){
-        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + "minutos | Está en el idioma original: " + idiomaOriginal;
+        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Está en el idioma original: " + idiomaOriginal;
         return estadoPelicula;
     }
 }
