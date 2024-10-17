@@ -32,14 +32,8 @@ public class Pelicula {
     /**
      * Devuelve el nombre de la pelicula
      */
-    public String getIdioma() {
-        String idioma;
-        if (idiomaOriginal){
-            idioma = "La pelicula está en su idioma original";
-        } else {
-            idioma = "La película no está en su idioma original";
-        }
-        return idioma;
+    public boolean getIdioma() {
+        return idiomaOriginal;
     }
     
     public void setTitulo(String nuevoTitulo){
@@ -55,13 +49,23 @@ public class Pelicula {
     }
     
     public void imprimirEstado(){
-        System.out.println("Titulo: " + titulo);
-        System.out.println("Duración: " + duracionMinutos + " minutos");
-        System.out.println("Está en el idioma original: " + idiomaOriginal);
+        String idioma;
+        if (idiomaOriginal){
+            idioma = "Idioma original";
+        } else {
+            idioma = "Está doblada";
+        }
+        System.out.println("Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Idioma: " + idioma);
     }
     
     public String estadoPelicula(){
-        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Está en el idioma original: " + idiomaOriginal;
+        String idioma;
+        if (idiomaOriginal){
+            idioma = "Idioma original";
+        } else {
+            idioma = "Está doblada";
+        }
+        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Idioma: " + idiomaOriginal;
         return estadoPelicula;
     }
 }
