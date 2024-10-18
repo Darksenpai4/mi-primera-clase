@@ -65,7 +65,7 @@ public class Pelicula {
         } else {
             idioma = "Está doblada";
         }
-        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Idioma: " + idiomaOriginal;
+        String estadoPelicula = "Titulo: " + titulo + " | Duración: " + duracionMinutos + " minutos | Idioma: " + idioma;
         return estadoPelicula;
     }
 }
